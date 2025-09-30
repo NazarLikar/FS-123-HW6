@@ -13,26 +13,72 @@
 <body>
 <!------------------------ Header ------------------------>
     <header class="header">
-        <div class="container header_container">
-            <nav class="header_nav">
+        <div class="container header_first_div">
+            <div class="header_mobile_div">
                 <a class="header_logo" href="./index.html"><span class="header_logo_web">web</span><span class="logo_studio">Studio</span></a>
-                <ul class="header_nav_list_ul header_nav">
-                    <li><a class="header_nav_list header_first_li" href="./index.html" >Studio</a></li>
-                    <li><a class="header_nav_list" href="">Portfolio</a></li>
-                    <li><a class="header_nav_list" href="">Contacts</a></li>
-                </ul>   
-            </nav>
-            <address class="header_address heater_text">
-                <ul class="header_address_list_ul header_nav"> 
-                    <li><a class="header_address_list" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li><a class="header_address_list" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-                </ul>
-            </address>
+                <button type="button" class="open_menu_button">
+                    <svg class="icon_menu" width="24" height="24">
+                        <use href="./images/icons.svg#icon-menu"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="header_container header_menu">
+                <button type="button" class="button_menu_close">
+                    <svg class="menu_close" width="8" height="8">
+                        <use href="./images/icons.svg#icon-x"></use>
+                    </svg>
+                </button>
+                <nav class="header_nav">
+                    <ul class="header_nav_list_ul header_nav">
+                        <li><a class="header_nav_list header_first_li" href="./index.html" >Studio</a></li>
+                        <li><a class="header_nav_list" href="">Portfolio</a></li>
+                        <li><a class="header_nav_list" href="">Contacts</a></li>
+                    </ul>   
+                </nav>
+                <address class="header_address heater_text">
+                    <ul class="header_address_list_ul"> 
+                        <li><a class="header_address_list" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li><a class="header_address_list header_address_secon_li" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                    </ul>
+                </address>
+                <div class="header_icons_list_div">
+                    <ul class="header_icons_list">
+                        <li class="header_list">
+                            <a href="" class="header_icons">
+                                <svg class="header_icons_media" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-insta"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="header_list">
+                            <a href="" class="header_icons">
+                                <svg class="header_icons_media" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="header_list">
+                            <a href="" class="header_icons">
+                                <svg class="header_icons_media" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="header_list">
+                            <a href="" class="header_icons">
+                                <svg class="header_icons_media" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
 <!------------------------ Main ------------------------>
-    <main class="main">
 <!------------------------ Section 1 ------------------------>
+    <main class="main">
         <section class="main_section_one">
             <div class="container first_c">  
                 <h1 class="title_section_one">Effective Solutions for Your Business</h1>
@@ -46,7 +92,7 @@
                 <ul class="main_section_two_list">
                     <li class="main_section_two_list_li">
                         <div class="main_section_two_div">
-                            <svg class="main_section_two_icon_antenna" width="64" height="64">
+                            <svg class="main_section_two_icon_antenna section_two_icons" width="64" height="64">
                                 <use href="./images/icons.svg#icon-antenna"></use>
                             </svg>
                         </div>
@@ -55,7 +101,7 @@
                     </li>
                     <li class="main_section_two_list_li">
                         <div class="main_section_two_div">
-                            <svg class="main_section_two_icon_clock" width="64" height="64">
+                            <svg class="main_section_two_icon_clock section_two_icons" width="64" height="64">
                                 <use href="./images/icons.svg#icon-clock"></use>
                             </svg>
                         </div>
@@ -64,7 +110,7 @@
                     </li>
                     <li class="main_section_two_list_li">
                         <div class="main_section_two_div">
-                            <svg class="main_section_two_icon_diagram" width="64" height="64">
+                            <svg class="main_section_two_icon_diagram section_two_icons" width="64" height="64">
                                 <use href="./images/icons.svg#icon-diagram"></use>
                             </svg>
                         </div>
@@ -73,7 +119,7 @@
                     </li>
                     <li class="main_section_two_list_li">
                         <div class="main_section_two_div">
-                            <svg class="main_section_two_icon_astrounaut" width="64" height="64">
+                            <svg class="main_section_two_icon_astrounaut section_two_icons" width="64" height="64">
                                 <use href="./images/icons.svg#icon-astrounaut"></use>
                             </svg>
                         </div>
@@ -311,42 +357,44 @@
 <!------------------------ Footer ------------------------>
     <footer class="footer">
         <div class="container footer_div">
-            <div class="footer_second_div">
-                <a class="footer_logo" href="./index.html"><span class="footer_logo_web">web</span><span class="footer_logo_studio">Studio</span></a>
-                <p class="footer_text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
-            </div>
-            <div class="footer_social_midia_div">
-                <p class="footer_social_midia">Social media</p>
-                <ul class="footer_icons_list">
-                    <li class="footer_list">
-                        <a href="" class="footer_icons">
-                            <svg class="footer_icon_media" width="24" height="24">
-                                <use href="./images/icons.svg#icon-insta"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer_list">
-                        <a href="" class="footer_icons">
-                            <svg class="footer_icon_media" width="24" height="24">
-                                <use href="./images/icons.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer_list">
-                        <a href="" class="footer_icons">
-                            <svg class="footer_icon_media" width="24" height="24">
-                                <use href="./images/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer_list">
-                        <a href="" class="footer_icons">
-                            <svg class="footer_icon_media" width="24" height="24">
-                                <use href="./images/icons.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+            <div class="footer_logo_social_media">
+                <div class="footer_second_div">
+                    <a class="footer_logo" href="./index.html"><span class="footer_logo_web">web</span><span class="footer_logo_studio">Studio</span></a>
+                    <p class="footer_text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
+                </div>
+                <div class= "footer_social_midia_div">
+                    <p class="footer_social_midia">Social media</p>
+                    <ul class="footer_icons_list">
+                        <li class="footer_list">
+                            <a href="" class="footer_icons">
+                                <svg class="footer_icon_media" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-insta"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer_list">
+                            <a href="" class="footer_icons">
+                                <svg class="footer_icon_media" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer_list">
+                            <a href="" class="footer_icons">
+                                <svg class="footer_icon_media" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer_list">
+                            <a href="" class="footer_icons">
+                                <svg class="footer_icon_media" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="footer_subscribe">
                 <p class="subscribe">Subscribe</p>
@@ -365,7 +413,7 @@
         </div>
     </footer>
 <!------------------------ Modal ------------------------>
-    <div class="overlay">
+    <!-- <div class="overlay">
         <div class="modal">
             <button type="button" class="button_modal_close">
                 <svg class="modal_close" width="8" height="8">
@@ -420,6 +468,6 @@
                 <button type="button" class="button_send">Send</button>
             </form>
         </div>
-    </div>
+    </div> -->
 </body>
 </html>
