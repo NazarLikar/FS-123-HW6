@@ -245,7 +245,7 @@ img{
     }
 
     .open_menu_button:checked + .header_container{
-        transform: translateX(100%);
+            transform: translateX(100%);
     }
 
     .header_menu{
@@ -392,7 +392,7 @@ img{
     line-height: 107%;
     letter-spacing: 0.02em;
     text-align: center;
-    max-width: 496px;
+    max-width: 496px;          
     margin: 0 auto;
     margin-bottom: 48px;
 }
@@ -423,15 +423,27 @@ img{
 }
 
 @media screen and (min-width: 768px) and (max-width: 1187px) {
-
+    
     .main_section_one {
         padding: 112px 0px;
         max-width: 768px;
-    }
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/image_Section_1_Background2x.jpg); 
+    } 
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
     
+    .main_section_1ne{
+        max-width: 320px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/image_Section_1_Background_Mobile.jpg)
+    }
+
+    .title_section_one{
+        font-size: 36px;
+    }
+
     .main_section_one{
         padding: 72px 0px;
         max-width: 320px;
@@ -588,7 +600,7 @@ img{
 
 .main_section_three_list_ul{
     display: flex;
-    gap: 24px;
+    gap: 64px 24px;
 }
 
 .main_section_three_icons_list{
@@ -685,10 +697,6 @@ img{
         justify-content: center;
         flex-wrap: wrap;
     }
-
-    .main_section_three_list_li{
-        margin-bottom: 64px;
-    }
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -733,7 +741,6 @@ img{
 }
 
 .main_section_four_li{
-    width: calc((100% - 48px) / 3);
     max-width: 360px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -791,6 +798,14 @@ img{
     color: #434455;
 }
 
+.main_section_four_img_com{
+    display: block;
+}   
+
+.main_section_four_img_mob{
+    display: none;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1187px) {
 
     .main_section_four_list_ul{
@@ -805,11 +820,20 @@ img{
 @media screen and (min-width: 320px) and (max-width: 767px) {
     
     .main_section_four_li{
-        width: calc((100% - 48px) / 1);
+        max-width: 288px;
     }
     
     .main_section_four_list_ul{
         justify-content: center;
+        flex-direction: column;
+    }
+
+    .main_section_four_img_com{
+        display: none;
+    }   
+
+    .main_section_four_img_mob{
+        display: block;
     }
 }
 
